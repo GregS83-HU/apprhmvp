@@ -15,7 +15,7 @@ export default function Home() {
   };
 
   const goToAnalyseCV = () => {
-    router.push('/analyse-cv');
+    router.push('/analyse-cv2');
   };
 
   return (
