@@ -1,24 +1,19 @@
-// plasmic-init.js
 import { initPlasmicLoader } from '@plasmicapp/loader-nextjs';
 import OpenedPositionList from './components/OpenedPositionList';
-
-
-
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
     {
-      id: '7z3xcfGksCdvA9UNTDmBwf',
-      token: 'mP4AeNHKB6Y4gTkd0Ss25V0DA4s1EIQjn0gT96AYvlfsEEptgEiGRmtlRmkA3MB2LEAr6ACxNCKsnWvj5Og',
+      id: '9Vr5YWkf3w7jj6SsTcCEta', // 🟡 à remplacer
+      token: 'IvzN3wRogyeRjfeLl1hqzdjIjkVBvUQXxxVMFtbbpBdxfeSyKuR8fwKkECaSQERdZAIiGsh8aXppCCjBiCYyg', // 🟡 à remplacer
     },
   ],
   preview: true,
-
-  componentModules:[
-    {
-        name: 'OpenedPositionList',
-        importPath: './components/OpenedPositionList',
-        defaultExport: true,
-    },
-  ],
+  componentModules: [
+  {
+    name: 'OpenedPositionList',
+    importPath: './components/OpenedPositionList',
+    defaultExport: true,
+  },
+],
 });
