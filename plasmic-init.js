@@ -9,4 +9,11 @@ export const PLASMIC = initPlasmicLoader({
     },
   ],
   preview: true,
+
+  componentsModules:[
+    {
+        name: 'OpenedPositionList',
+        importPath: './components/OpenedPositionList'
+    },
+  ],
 });
