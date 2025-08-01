@@ -83,6 +83,7 @@ function PlasmicPageLayout__RenderFunc(props) {
         plasmic_plasmic_rich_components_css.plasmic_tokens,
         sty.root
       )}
+      layout={"side"}
       logoElement={
         <Icon2Icon
           className={classNames(projectcss.all, sty.svg__eGqJp)}
@@ -90,9 +91,18 @@ function PlasmicPageLayout__RenderFunc(props) {
         />
       }
       navMenuItems={(() => {
-        const __composite = [{ path: null, name: null }];
+        const __composite = [
+          { path: null, name: null },
+          { path: null, name: null },
+          { path: null, name: null }
+        ];
+
         __composite["0"]["path"] = `/`;
         __composite["0"]["name"] = "Home";
+        __composite["1"]["path"] = `/opened-positions`;
+        __composite["1"]["name"] = "Opened Positions";
+        __composite["2"]["path"] = `/analyse-cv`;
+        __composite["2"]["name"] = "CV Analyses";
         return __composite;
       })()}
       simpleNavTheme={(() => {
@@ -100,7 +110,7 @@ function PlasmicPageLayout__RenderFunc(props) {
         __composite["scheme"] = "primary";
         return __composite;
       })()}
-      title={"App title"}
+      title={"HR Stream"}
     >
       <LoadingBoundary
         data-plasmic-name={"loadingBoundary"}
@@ -134,7 +144,7 @@ function PlasmicPageLayout__RenderFunc(props) {
                         sty.h1___48Xvz
                       )}
                     >
-                      {"Untitled page"}
+                      {"This is the page"}
                     </h1>
                     <div
                       className={classNames(
