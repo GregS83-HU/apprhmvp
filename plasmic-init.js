@@ -1,5 +1,7 @@
 // plasmic-init.js
 import { initPlasmicLoader } from '@plasmicapp/loader-nextjs';
+import OpenedPositionList from './components/OpenedPositionList';
+
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
