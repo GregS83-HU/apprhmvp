@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { supabase } from '../lib/supabaseClient';
 
+
 export default function Home() {
   const [nom, setNom] = useState('');
   const [prenom, setPrenom] = useState('');
